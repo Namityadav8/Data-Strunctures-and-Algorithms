@@ -1,41 +1,35 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
-
 class student {
 public:
     int id;
-    string name;
-    string registration_number;
+    std::string name;
+    std::string registration_number;
+
 };
 
-void takeInput(student& student) {
-    cout << "Enter student ID: ";
-    cin >> student.id;
-    cin.ignore(); 
-
-    cout << "Enter student name: ";
-    getline(cin, student.name);
-
-    cout << "Enter registration number: ";
-    getline(cin, student.registration_number);
+void takeInput(student& studentdent) {
+    std::cout << "Enter studentdent ID: ";
+    std::cin >> studentdent.id;
+    
+    
 }
 
-void printstudentDetails(const student& student) {
-    cout << "ID: " << student.id << endl;
-    cout << "Name: " << student.name << endl;
-    cout << "Reg_No: " << student.registration_number << endl;
+void printstudentdentDetails(const student& studentdent) {
+    std::cout << "ID: " << studentdent.id << std::endl;
+    std::cout << "Name: " << studentdent.name << std::endl;
+    std::cout << "Reg_No: " << studentdent.registration_number << std::endl;
+
 }
 
 int main() {
-    student student;
+    student studentdent;
 
-    takeInput(student);
+    takeInput(studentdent);
 
-    cout << "\nstudent Details:" << endl;
-    printstudentDetails(student);
+    std::cout << "\nstudentdent Details:" << std::endl;
+    printstudentdentDetails(studentdent);
 
     return 0;
 }
