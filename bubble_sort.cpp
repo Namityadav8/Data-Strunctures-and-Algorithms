@@ -6,30 +6,32 @@ public:
     int id;
     std::string name;
     std::string registration_number;
-
 };
 
-void takeInput(student& studentdent) {
-    std::cout << "Enter studentdent ID: ";
-    std::cin >> studentdent.id;
+void takeInput(student& studentObj) {
+    std::cout << "Enter student ID: ";
+    std::cin >> studentObj.id;
     
+    std::cout << "Enter student name: ";
+    std::cin >> studentObj.name;
     
+    std::cout << "Enter registration number: ";
+    std::cin >> studentObj.registration_number;
 }
 
-void printstudentdentDetails(const student& studentdent) {
-    std::cout << "ID: " << studentdent.id << std::endl;
-    std::cout << "Name: " << studentdent.name << std::endl;
-    std::cout << "Reg_No: " << studentdent.registration_number << std::endl;
-
+void printstudentDetails(const student& studentObj) {
+    std::cout << "ID: " << studentObj.id << std::endl;
+    std::cout << "Name: " << studentObj.name << std::endl;
+    std::cout << "Reg_No: " << studentObj.registration_number << std::endl;
 }
 
 int main() {
-    student studentdent;
+    student studentObj;
 
-    takeInput(studentdent);
+    takeInput(studentObj);
 
-    std::cout << "\nstudentdent Details:" << std::endl;
-    printstudentdentDetails(studentdent);
+    std::cout << "\nstudent Details:" << std::endl;
+    printstudentDetails(studentObj);
 
     return 0;
 }
