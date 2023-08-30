@@ -57,6 +57,7 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "files.associations": {
     "*.cpp": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "ostream": "cpp"
   }
 }
