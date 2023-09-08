@@ -19,3 +19,5 @@ int ans=half.solve(n);
 cout<<ans<<endl;
 	
 }
+
+
