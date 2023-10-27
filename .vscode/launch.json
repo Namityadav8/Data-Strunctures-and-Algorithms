@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Academics/Programming/Data-Strunctures-and-Algorithms/my_DSA",
+      "program": "c:/Academics/Programming/Data-Strunctures-and-Algorithms/my_DSA/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
